@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Банковский счет");
+﻿using System.IO.Compression;
+
+Console.WriteLine("Банковский счет");
 
 double balance = 1000;
 Console.WriteLine($"Начальный баланс: {balance}");
@@ -119,3 +121,8 @@ Console.WriteLine($"Хороший экзамен (>=60): {hasGoodExam}");
 Console.WriteLine($"Льгота: {hasBenefit}");
 Console.WriteLine($"Проходит по правилам: {isEligibleByRules}");
 Console.WriteLine($"Итоговый балл: {totalScore}");
+
+int number = int.Parse(Console.ReadLine());
+
+bool a = number % 2 == 0;
+Console.WriteLine($"Число четное: {a}");
