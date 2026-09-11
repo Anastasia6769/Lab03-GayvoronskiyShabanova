@@ -122,7 +122,7 @@ Console.WriteLine($"Льгота: {hasBenefit}");
 Console.WriteLine($"Проходит по правилам: {isEligibleByRules}");
 Console.WriteLine($"Итоговый балл: {totalScore}");
 
-int number = int.Parse(Console.ReadLine());
+int number = int.Parse(Console.ReadLine("Введите число:"));
 
 bool a = number % 2 == 0;
 Console.WriteLine($"Число четное: {a}");
