@@ -129,3 +129,17 @@ int number = int.Parse(Console.ReadLine());
 
 bool isEven = number % 2 == 0;
 Console.WriteLine($"Число четное: {isEven}");
+
+Console.WriteLine("Инкремент в выражении");
+
+int x = 6;
+
+int result1 = x++; // используется старое значение 6
+Console.WriteLine($"result1 = {result1}, x = {x}"); // x увеличивается до 7
+int result2 = ++x; // x увеличивается до 9
+Console.WriteLine($"result2 = {result2}, x = {x}"); // используется новое значение 8
+
+int result3 = x++ + 10; // используется 8, затем x увеличивается до 9
+Console.WriteLine($"result3 = {result3}, x = {x}");
+
+
